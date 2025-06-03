@@ -83,8 +83,8 @@ INSERT INTO orders VALUES ('OF1900191872','UVW7890123456JKL','2025-02-25 19:15:0
 INSERT INTO orders VALUES ('OF1900191873','UVW7890123456JKL','2025-03-25 19:15:00','PIZZA123','Italian','Delivered','TASTY50');
 
 select * from orders
+    
 --1. Top 1 outlets by cuisine type without using limit and top function
-
 with cte as
 (select 
 cuisine,restaurant_id,count(*) as no_of_orders
